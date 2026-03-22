@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts
+dist/
+build/
+target/

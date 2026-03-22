@@ -1,0 +1,25 @@
+name: Homebrew Formula Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Audit formula
+        run: brew audit --strict Formula/pagerunner.rb
+
+      - name: Install formula
+        run: brew install ./Formula/pagerunner.rb
+
+      - name: Test binary
+        run: pagerunner --version
+
+      - name: Uninstall
+        run: brew uninstall pagerunner
