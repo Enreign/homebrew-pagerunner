@@ -1,20 +1,20 @@
 class Pagerunner < Formula
   desc "Chrome browser automation MCP server for AI agents"
   homepage "https://github.com/Enreign/pagerunner"
-  version "0.1.1"
+  version "0.6.1"
   license "MIT"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Enreign/pagerunner/releases/download/v0.1.1/pagerunner-macos-arm64"
-      sha256 "9c79e5b9bf121a504a15daf0a280c7762da03d533dd326182ee3d10669c766f9"
+      url "https://github.com/Enreign/pagerunner/releases/download/v0.6.1/pagerunner-macos-arm64"
+      sha256 "4d80c3adbc01debc6549ff536568eea02bb24c87c3c3b148991ee4d860c43691"
     else
-      url "https://github.com/Enreign/pagerunner/releases/download/v0.1.1/pagerunner-macos-x86_64"
-      sha256 "c05ab8ba56495a83976d930901653e7bb98f18c2e0057503804efd849cdf3297"
+      url "https://github.com/Enreign/pagerunner/releases/download/v0.6.1/pagerunner-macos-x86_64"
+      sha256 "891da766204782106ef4baa264747c2246e71ad1ebef62101517b7a3c1d63b96"
     end
   elsif OS.linux?
-    url "https://github.com/Enreign/pagerunner/releases/download/v0.1.1/pagerunner-linux-x86_64"
-    sha256 "dba4c03ec524208aa78f67c3c43e1b381554b71803b8fa0b54c5e55ba81ce3c7"
+    url "https://github.com/Enreign/pagerunner/releases/download/v0.6.1/pagerunner-linux-x86_64"
+    sha256 "a7dca51f44857446a35252ef7c8550a6f5547d0cc7252f0d59bd61c4507f8397"
   end
 
   def install
